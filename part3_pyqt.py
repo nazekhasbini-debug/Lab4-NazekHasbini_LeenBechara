@@ -465,7 +465,7 @@ class SchoolManagementSystem(QMainWindow):
     # ADD INSTRUCTOR
     # ==================================================
 
-def add_instructor(self):
+    def add_instructor(self):
         """
         Add a new instructor after validating the entered information.
         """
@@ -518,7 +518,7 @@ def add_instructor(self):
     # ADD COURSE
     # ==================================================
 
-def add_course(self):
+    def add_course(self):
         """
         Add a new course after validating the entered information.
         """
@@ -567,7 +567,7 @@ def add_course(self):
     # STUDENT REGISTRATION
     # ==================================================
 
-def register_student(self):
+    def register_student(self):
         """
         Register a student for a course.
         """
@@ -623,7 +623,7 @@ def register_student(self):
     # INSTRUCTOR ASSIGNMENT
     # ==================================================
 
-def assign_instructor(self):
+    def assign_instructor(self):
         """
         Assign the selected instructor to the selected course.
         """
@@ -674,7 +674,7 @@ def assign_instructor(self):
     # REFRESH TABLE
     # ==================================================
 
-def refresh_table(self):
+    def refresh_table(self):
         """
         Refresh the table to display all current records.
         """
@@ -704,7 +704,7 @@ def refresh_table(self):
                 "-"
             )
 
-def add_table_row(
+    def add_table_row(
     self,
     record_type,
     record_id,
@@ -740,7 +740,7 @@ def add_table_row(
     # SEARCH
     # ==================================================
 
-def search_records(self):
+    def search_records(self):
         """Search records by name, ID, email, or course information."""
         search_text = (
             self.search_entry.text().lower().strip()
@@ -795,7 +795,7 @@ def search_records(self):
                     "-"
                 )
 
-def clear_search(self):
+    def clear_search(self):
         """Clear the search field and display all records."""
         self.search_entry.clear()
         self.refresh_table()
@@ -804,7 +804,7 @@ def clear_search(self):
     # DELETE
     # ==================================================
 
-def delete_record(self):
+    def delete_record(self):
         """Delete the selected student, instructor, or course record."""
         row = self.table.currentRow()
 
@@ -860,7 +860,7 @@ def delete_record(self):
     # EDIT
     # ==================================================
 
-def edit_record(self):
+    def edit_record(self):
         """Load the selected record into its form for editing."""
         row = self.table.currentRow()
 
@@ -968,7 +968,7 @@ def edit_record(self):
     # SAVE EDITED RECORD
     # ==================================================
 
-def save_changes(self):
+    def save_changes(self):
         """Validate and save changes made to the selected record."""
         if self.editing_object is None:
             QMessageBox.warning(
@@ -1104,7 +1104,7 @@ def save_changes(self):
     # SAVE DATA
     # ==================================================
 
-def save_data(self):
+    def save_data(self):
         """Save all school management data to a JSON file."""
         data = {
             "students": [
@@ -1176,7 +1176,7 @@ def save_data(self):
     # LOAD DATA
     # ==================================================
 
-def load_data(self):
+    def load_data(self):
         """Load previously saved school management data from JSON."""
         try:
             with open(
@@ -1302,7 +1302,7 @@ def load_data(self):
     # EXPORT CSV
     # ==================================================
 
-def export_csv(self):
+    def export_csv(self):
         """Export all current records to a CSV file."""
         filename, _ = QFileDialog.getSaveFileName(
             self,
@@ -1380,7 +1380,7 @@ def export_csv(self):
     # DROPDOWNS
     # ==================================================
 
-def update_dropdowns(self):
+    def update_dropdowns(self):
         """Update all student, instructor, and course dropdown menus."""
         self.student_dropdown.clear()
         self.student_course_dropdown.clear()
@@ -1418,21 +1418,21 @@ def update_dropdowns(self):
     # CLEAR FORMS
     # ==================================================
 
-def clear_student_form(self):
+    def clear_student_form(self):
         """Clear all fields in the student form."""
         self.student_name.clear()
         self.student_age.clear()
         self.student_email.clear()
         self.student_id.clear()
 
-def clear_instructor_form(self):
+    def clear_instructor_form(self):
         """Clear all fields in the instructor form."""
         self.instructor_name.clear()
         self.instructor_age.clear()
         self.instructor_email.clear()
         self.instructor_id.clear()
 
-def clear_course_form(self):
+    def clear_course_form(self):
         """Clear all fields in the course form."""
         self.course_id.clear()
         self.course_name.clear()
