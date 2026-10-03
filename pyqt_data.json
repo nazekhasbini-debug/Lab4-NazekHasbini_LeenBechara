@@ -1,0 +1,25 @@
+{
+    "students": [
+        {
+            "name": "leen",
+            "age": 21,
+            "email": "lab37@email.com",
+            "student_id": "202400399",
+            "registered_courses": [
+                "202339"
+            ]
+        }
+    ],
+    "instructors": [
+        {
+            "name": "jihad",
+            "age": 38,
+            "email": "jhs21@email.com",
+            "instructor_id": "221",
+            "assigned_courses": [
+                "202339"
+            ]
+        }
+    ],
+    "courses": []
+}

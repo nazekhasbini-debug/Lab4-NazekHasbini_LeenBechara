@@ -1,0 +1,24 @@
+{
+    "students": [
+        {
+            "name": "Mira",
+            "age": 21,
+            "email": "mira@email.com",
+            "student_id": "20260001"
+        }
+    ],
+    "instructors": [
+        {
+            "name": "Dr John",
+            "age": 40,
+            "email": "john@aub.edu.lb",
+            "instructor_id": "I001"
+        }
+    ],
+    "courses": [
+        {
+            "course_id": "EECE435",
+            "course_name": "Software Tools Lab"
+        }
+    ]
+}
