@@ -65,4 +65,4 @@ make.bat html
 
 - **Leen Bechara:** Worked on the Tkinter implementation, integration, testing, and documentation.
 - **Nazek Hasbini:** Worked on the PyQt implementation, testing, and Git/GitHub workflow.
-- Both team members used branches and pull requests to integrate their work into the `main` branch.
+- Both used branches and pull requests to integrate their work into the `main` branch.
